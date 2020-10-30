@@ -16,3 +16,25 @@
 // 	}
 // 	return splitStr.join(' ');
 // }
+
+//10/30/20 kyu = 6
+
+//Prompt: Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+//solution:
+// function digital_root(n) {
+// 	let str = n.toString().split('');
+// 	let solution;
+// 	let added;
+// 	function final() {
+// 		solution = str.map(Number).reduce(function (a, b) {
+// 			return (added = a + b);
+// 		}, 0);
+// 	}
+// 	final();
+// 	if (added.toString().length > 1) {
+// 		return digital_root(added);
+// 	}
+
+// 	return solution;
+// }
