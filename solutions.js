@@ -38,3 +38,24 @@
 
 // 	return solution;
 // }
+
+//11/6/20 kyu = 5
+
+//Prompt: "PigLatin" -- Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+//solution:
+// function pigIt(str) {
+// 	let splitString = str.split(' ');
+// 	let array = [];
+// 	var letters = /^[A-Za-z]+$/;
+// 	for (let i = 0; i < splitString.length; i++) {
+// 		if (splitString[i].match(letters)) {
+// 			let firstLetter = splitString[i].charAt(0);
+// 			let restOfWord = splitString[i].slice(1, splitString[i].length);
+// 			array.push(`${restOfWord}${firstLetter}ay`);
+// 		} else {
+// 			array.push(splitString[i]);
+// 		}
+// 	}
+// 	return array.join(' ');
+// }
