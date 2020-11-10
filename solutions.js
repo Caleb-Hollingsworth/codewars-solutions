@@ -86,3 +86,29 @@
 //     return true
 //   }else {return false}
 // }
+
+// 11/10/20
+
+//Prompt: "Dashatize" -- Given a number, return a string with dash'-'marks before and after each odd integer, but do not begin or end the string with a dash mark.
+
+//Solution:
+// function dashatize(num) {
+// 	if (Number.isInteger(num) !== true) {
+// 		return 'NaN';
+// 	}
+// 	let absNum = Math.abs(num);
+// 	let numStr = absNum.toString();
+// 	let result = [numStr[0]];
+// 	if (numStr.length === 1) {
+// 		return numStr;
+// 	}
+
+// 	for (let i = 1; i < numStr.length; i++) {
+// 		if (numStr[i - 1] % 2 === 0 && numStr[i] % 2 === 0) {
+// 			result.push(numStr[i]);
+// 		} else {
+// 			result.push('-', numStr[i]);
+// 		}
+// 	}
+// 	return result.join('');
+// }
