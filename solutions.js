@@ -112,3 +112,30 @@
 // 	}
 // 	return result.join('');
 // }
+
+//11/12/20
+
+//Prompt: "Directions Reduction" -- Once upon a time, on a way through the old wild mountainous west,…
+// … a man was given directions to go from one point to another. The directions were "NORTH", "SOUTH", "WEST", "EAST". Clearly "NORTH" and "SOUTH" are opposite, "WEST" and "EAST" too.
+
+// Going to one direction and coming back the opposite direction right away is a needless effort. Since this is the wild west, with dreadfull weather and not much water, it's important to save yourself some energy, otherwise you might die of thirst!
+
+// Write a function dirReduc which will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side).
+
+//Solution:
+// function dirReduc(arr) {
+// 	let oppositeDirections = {
+// 		NORTH: 'SOUTH',
+// 		SOUTH: 'NORTH',
+// 		EAST: 'WEST',
+// 		WEST: 'EAST',
+// 	};
+// 	return arr.reduce((directions, oppDirection) => {
+// 		console.log(arr);
+// 		console.log(directions);
+// 		directions[directions.length - 1] !== oppositeDirections[oppDirection]
+// 			? directions.push(oppDirection)
+// 			: directions.pop();
+// 		return directions;
+// 	}, []);
+// }
