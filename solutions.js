@@ -87,7 +87,7 @@
 //   }else {return false}
 // }
 
-// 11/10/20
+// 11/10/20 kyu=6
 
 //Prompt: "Dashatize" -- Given a number, return a string with dash'-'marks before and after each odd integer, but do not begin or end the string with a dash mark.
 
@@ -113,7 +113,7 @@
 // 	return result.join('');
 // }
 
-//11/12/20
+//11/12/20 kyu=5
 
 //Prompt: "Directions Reduction" -- Once upon a time, on a way through the old wild mountainous west,…
 // … a man was given directions to go from one point to another. The directions were "NORTH", "SOUTH", "WEST", "EAST". Clearly "NORTH" and "SOUTH" are opposite, "WEST" and "EAST" too.
@@ -140,7 +140,7 @@
 // 	}, []);
 // }
 
-// 11/13/20
+// 11/13/20 kyu=6
 
 //Prompt: "Split Strings" -- Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
 
@@ -166,4 +166,20 @@
 // 		? (result[result.length - 1] += '_')
 // 		: result;
 // 	return result;
+// }
+
+// 11/13/20 kyu=7
+
+//Prompt: "Square Every Digit" -- Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+//Solution
+// function squareDigits(num) {
+// 	let splitNum = num.toString().split('');
+// 	let final = [];
+// 	for (let i = 0; i < splitNum.length; i++) {
+// 		final.push(Math.pow(splitNum[i], 2));
+// 	}
+// 	return parseInt(final.join(''));
 // }
