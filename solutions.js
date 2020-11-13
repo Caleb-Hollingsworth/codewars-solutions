@@ -139,3 +139,31 @@
 // 		return directions;
 // 	}, []);
 // }
+
+// 11/13/20
+
+//Prompt: "Split Strings" -- Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
+
+//Solution:
+// function solution(str) {
+// 	let splitStr = str.split('');
+// 	let pairingArr = [];
+// 	let result = [];
+// 	if (splitStr.length < 1) {
+// 		return splitStr;
+// 	}
+// 	for (let i = 0; i < splitStr.length; i = i + 2) {
+// 		let pair = [];
+// 		pair.push(splitStr[i], splitStr[i + 1]);
+// 		pairingArr.push(pair);
+// 	}
+// 	for (let i = 0; i < pairingArr.length; i++) {
+// 		let joinedStr = '';
+// 		joinedStr = pairingArr[i].join('');
+// 		result.push(joinedStr);
+// 	}
+// 	result[result.length - 1].length % 2 !== 0
+// 		? (result[result.length - 1] += '_')
+// 		: result;
+// 	return result;
+// }
