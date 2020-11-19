@@ -183,3 +183,23 @@
 // 	}
 // 	return parseInt(final.join(''));
 // }
+
+// 11/19/20 kyu=5
+
+//Prompt: "Moving Zeros To The End" --Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+//Solution
+// var moveZeros = function (arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i] !== 0) {
+// 			newArr.push(arr[i]);
+// 		}
+// 	}
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i] === 0) {
+// 			newArr.push(arr[i]);
+// 		}
+// 	}
+// 	return newArr;
+// };
