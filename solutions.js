@@ -208,6 +208,7 @@
 
 //Prompt: "Count The Number of Duplicates" --Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
 
+// Solution:
 // function duplicateCount(text) {
 // 	return text
 // 		.toLowerCase()
@@ -216,4 +217,27 @@
 // 			(value, index, arr) =>
 // 				arr.indexOf(value) !== index && arr.lastIndexOf(value) === index
 // 		).length;
+// }
+
+//11/22/20 kyu=7
+
+//Prompt: "Vowel Count" --Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
+//Solution:
+// function getCount(str) {
+// 	var vowelsCount = 0;
+// 	const vowels = ['a', 'e', 'i', 'o', 'u'];
+// 	let splitStr = str.split('');
+// 	for (let i = 0; i < vowels.length; i++) {
+// 		let checkStr = splitStr.map((string) => {
+// 			if (string === vowels[i]) {
+// 				vowelsCount++;
+// 			}
+// 		});
+// 	}
+// 	return vowelsCount;
 // }
