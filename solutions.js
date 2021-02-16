@@ -250,3 +250,21 @@
 // function alphanumeric(string) {
 // 	return string.match('^[a-zA-Z0-9]*$') && string !== '' ? true : false;
 // }
+
+//2/16/21 kyu===5
+
+//Prompt: Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
+//Solution:
+// function validParentheses(parens) {
+// 	let splitParens = parens.split('');
+// 	let openCount = 0;
+// 	let closeCount = 0;
+// 	for (let i = 0; i < splitParens.length; i++) {
+// 		splitParens[i] === '(' && openCount >= closeCount
+// 			? openCount++
+// 			: closeCount++;
+// 	}
+// 	let result = (openCount + closeCount) % 2 === 0 ? true : false;
+// 	return openCount === closeCount ? result : false;
+// }
