@@ -282,3 +282,44 @@
 // }
 // return a;
 // }
+
+//2/18/21 hackerRank === easy
+
+//You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
+
+//Solution:
+// function birthdayCakeCandles(candles) {
+// 	return candles
+// 		.sort((a, b) => {
+// 			return b - a;
+// 		})
+// 		.filter((candle) => {
+// 			return candle === candles[0];
+// 		}).length;
+// }
+
+//2/18/21 kyu===6
+
+//Prompt: Design a data structure that supports the following two operations:
+
+// addWord (or add_word) which adds a word,
+// search which searches a literal word or a regular expression string containing lowercase letters "a-z" or "." where "." can represent any letter
+// You may assume that all given words contain only lowercase letters.
+
+//Solution:
+// var WordDictionary = function () {
+// 	this.words = [];
+// };
+
+// WordDictionary.prototype.addWord = function (word) {
+// 	this.words.push(word);
+// };
+
+// WordDictionary.prototype.search = function (word) {
+// 	let regEx = new RegExp(`^${word}$`);
+// 	if (this.words.find((x) => regEx.test(x))) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// };
