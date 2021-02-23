@@ -287,15 +287,9 @@
 
 //You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
 
-//Solution:
+// Solution:
 // function birthdayCakeCandles(candles) {
-// 	return candles
-// 		.sort((a, b) => {
-// 			return b - a;
-// 		})
-// 		.filter((candle) => {
-// 			return candle === candles[0];
-// 		}).length;
+// 	return candles.sort((a, b) => {return b - a;}).filter((candle) => {return candle === candles[0];}).length;
 // }
 
 //2/18/21 kyu===6
@@ -306,7 +300,7 @@
 // search which searches a literal word or a regular expression string containing lowercase letters "a-z" or "." where "." can represent any letter
 // You may assume that all given words contain only lowercase letters.
 
-//Solution:
+// Solution:
 // var WordDictionary = function () {
 // 	this.words = [];
 // };
@@ -323,3 +317,72 @@
 // 		return false;
 // 	}
 // };
+
+// 2/23/21 kyu===5
+// Prompt:This time we want to write calculations using functions and get the results. Let's have a look at some examples:
+
+// seven(times(five())); // must return 35
+// four(plus(nine())); // must return 13
+// eight(minus(three())); // must return 5
+// six(dividedBy(two())); // must return 3
+
+// Solution:
+// function equation(number, operation) {
+// 	if (operation) {
+// 		return operation(number);
+// 	} else {
+// 		return number;
+// 	}
+// }
+
+// function zero(operation) {
+// 	return equation(0, operation);
+// }
+// function one(operation) {
+// 	return equation(1, operation);
+// }
+// function two(operation) {
+// 	return equation(2, operation);
+// }
+// function three(operation) {
+// 	return equation(3, operation);
+// }
+// function four(operation) {
+// 	return equation(4, operation);
+// }
+// function five(operation) {
+// 	return equation(5, operation);
+// }
+// function six(operation) {
+// 	return equation(6, operation);
+// }
+// function seven(operation) {
+// 	return equation(7, operation);
+// }
+// function eight(operation) {
+// 	return equation(8, operation);
+// }
+// function nine(operation) {
+// 	return equation(9, operation);
+// }
+
+// function plus(num) {
+// 	return function (y) {
+// 		return Math.floor(y + num);
+// 	};
+// }
+// function minus(num) {
+// 	return function (y) {
+// 		return Math.floor(y - num);
+// 	};
+// }
+// function times(num) {
+// 	return function (y) {
+// 		return Math.floor(y * num);
+// 	};
+// }
+// function dividedBy(num) {
+// 	return function (y) {
+// 		return Math.floor(y / num);
+// 	};
+// }
