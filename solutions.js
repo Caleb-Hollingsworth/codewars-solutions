@@ -386,3 +386,33 @@
 // 		return Math.floor(y / num);
 // 	};
 // }
+
+// 2/26/21 kyu===6
+
+//Prompt Complete Fibonacci Sequence
+
+//Solution:
+// function fibonacci(n) {
+// 	let fib = [0];
+// 	for (let i = 0; i < n - 1; i++) {
+// 		if (fib[i] !== 0) {
+// 			fib.push(fib[i] + fib[i - 1]);
+// 		} else {
+// 			fib.push(i + 1);
+// 		}
+// 	}
+// 	return n <= 0 ? [] : fib;
+// }
+
+//Same solution in Python:
+// def fibonacci(n):
+//     if n > 0:
+//         fib = [0]
+//         for i in range(n - 1):
+//             if fib[i] != 0:
+//                 fib.append(fib[i] + fib[i - 1])
+//             else:
+//                 fib.append(i + 1)
+//         return fib
+//     else:
+//         return []
