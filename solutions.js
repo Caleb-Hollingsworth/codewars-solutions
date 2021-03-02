@@ -416,3 +416,22 @@
 //         return fib
 //     else:
 //         return []
+
+// 3/2/21 kyu===6
+
+//Prompt: Multiples of 3 or 5
+
+//Solution:
+
+// function solution(number) {
+// 	let sum = 0;
+// 	const findNumbers = () => {
+// 		for (let i = 0; i < number; i++) {
+// 			if (i % 3 === 0 || i % 5 === 0) {
+// 				sum = sum + i;
+// 			}
+// 		}
+// 		return sum;
+// 	};
+// 	return number < 0 ? 0 : findNumbers();
+// }
