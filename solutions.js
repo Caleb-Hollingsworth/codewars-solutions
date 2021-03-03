@@ -435,3 +435,46 @@
 // 	};
 // 	return number < 0 ? 0 : findNumbers();
 // }
+
+// 3/3/21 kyu === 4 (timed out so not actual solution)
+
+//Prompt How Many Numbers III
+
+//Solution:
+// function findAll(n, k) {
+// 	let y = Math.pow(10, k);
+// 	let x = Math.pow(10, k - 1);
+// 	let array = [];
+
+// 	const checkForN = (nums) => {
+// 		let sum = nums.reduce((a, b) => a + b, 0);
+// 		if (sum === n) {
+// 			array.push(nums.join(''));
+// 		}
+// 	};
+
+// 	const checkForX = (number) => {
+// 		let statement = true;
+// 		for (let i = 0; i < number.length - 1; i++) {
+// 			if (number[i] > number[i + 1]) {
+// 				statement = false;
+// 			}
+// 		}
+// 		return statement === true ? checkForN(number) : false;
+// 	};
+// 	for (let i = x; i < y; i++) {
+// 		let index = 0;
+// 		let number = i.toString().split('').map(Number);
+// 		checkForX(number);
+// 	}
+// 	let sortedArray = array.sort();
+// 	let result = [];
+// 	sortedArray.length > 0
+// 		? result.push.apply(result, [
+// 				array.length,
+// 				sortedArray[0],
+// 				sortedArray[sortedArray.length - 1],
+// 		  ])
+// 		: result;
+// 	return result;
+// }
