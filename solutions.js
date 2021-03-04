@@ -478,3 +478,20 @@
 // 		: result;
 // 	return result;
 // }
+
+// 3/4/21 kyu===6
+
+//Prompt: Covert String to camel case
+
+//Solution:
+// function toCamelCase(str) {
+// 	let splitStr = str.split('');
+// 	let camelCase = [];
+// 	for (let i = 0; i < splitStr.length; i++) {
+// 		if (splitStr[i] === '_' || splitStr[i] === '-') {
+// 			splitStr[i + 1] = splitStr[i + 1].toUpperCase();
+// 			splitStr.splice(i, 1);
+// 		}
+// 	}
+// 	return str.length > 0 ? splitStr.join('') : '';
+// }
