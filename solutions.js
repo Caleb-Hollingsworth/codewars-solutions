@@ -495,3 +495,21 @@
 // 	}
 // 	return str.length > 0 ? splitStr.join('') : '';
 // }
+
+// 3/8/21 kyu===5
+
+//Prompt: String Incrementor
+
+//Solution:
+// function incrementString(strng) {
+// 	let text = strng.replace(/[0-9]/g, '');
+// 	let numLength = strng.length - text.length;
+// 	let numString = strng.slice(text.length) || '0';
+// 	numString = (parseInt(numString) + 1).toString();
+
+// 	while (numString.length < numLength) {
+// 		numString = '0' + numString;
+// 	}
+
+// 	return text.concat(numString);
+// }
