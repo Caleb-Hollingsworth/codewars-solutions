@@ -513,3 +513,35 @@
 
 // 	return text.concat(numString);
 // }
+
+//in progress
+
+function orderWeight(strng) {
+	let splitStr = strng.split(' ');
+	let newArr = [];
+	let finalArr = [];
+	let sum;
+	let numObj = {};
+	for (let i = 0; i < splitStr.length; i++) {
+		let numArr = splitStr[i].split('');
+		for (let j = 0; j < numArr.length; j++) {
+			numArr[j] = Number(numArr[j]);
+		}
+		sum = numArr.reduce((a, b) => a + b, 0);
+		newArr.push(sum);
+		finalArr.push(sum);
+	}
+	finalArr.sort((a, b) => a - b);
+	newArr.forEach((num, index) => {
+		numObj[index] = { index: finalArr.indexOf(num), value: splitStr[index] };
+	});
+	let array = [];
+	for (i in numObj) {
+		if (splitStr.indexOf(splitStr[i]) === numObj[i].index) {
+			array.push(numObj[i].value);
+		}
+	}
+
+	console.log(array);
+	console.log(numObj);
+}
