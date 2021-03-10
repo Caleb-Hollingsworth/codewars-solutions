@@ -545,3 +545,34 @@ function orderWeight(strng) {
 	console.log(array);
 	console.log(numObj);
 }
+
+// 3/10/21 kyu===6
+
+//Prompt: Roman Numerals Encoder
+
+//Solution:
+// function solution(number) {
+// 	let numerals = {
+// 		M: 1000,
+// 		CM: 900,
+// 		D: 500,
+// 		CD: 400,
+// 		C: 100,
+// 		XC: 90,
+// 		L: 50,
+// 		XL: 40,
+// 		X: 10,
+// 		IX: 9,
+// 		V: 5,
+// 		IV: 4,
+// 		I: 1,
+// 	};
+// 	let romanNumerals = '';
+// 	for (i in numerals) {
+// 		while (number >= numerals[i]) {
+// 			romanNumerals += i;
+// 			number -= numerals[i];
+// 		}
+// 	}
+// 	return romanNumerals;
+// }
