@@ -553,19 +553,19 @@ function orderWeight(strng) {
 //Solution:
 // function solution(number) {
 // 	let numerals = {
-// 		M: 1000,
-// 		CM: 900,
-// 		D: 500,
-// 		CD: 400,
-// 		C: 100,
-// 		XC: 90,
-// 		L: 50,
-// 		XL: 40,
-// 		X: 10,
-// 		IX: 9,
-// 		V: 5,
-// 		IV: 4,
-// 		I: 1,
+// M: 1000,
+// CM: 900,
+// D: 500,
+// CD: 400,
+// C: 100,
+// XC: 90,
+// L: 50,
+// XL: 40,
+// X: 10,
+// IX: 9,
+// V: 5,
+// IV: 4,
+// I: 1,
 // 	};
 // 	let romanNumerals = '';
 // 	for (i in numerals) {
@@ -575,4 +575,39 @@ function orderWeight(strng) {
 // 		}
 // 	}
 // 	return romanNumerals;
+// }
+
+// 3/10/21
+
+//Prompt: Roman Numerals Decoder
+
+//Solution:
+// function solution(roman) {
+// 	let splitRo = roman.split('');
+// 	let sum = 0;
+// 	let numerals = {
+// 		M: 1000,
+// 		D: 500,
+// 		C: 100,
+// 		L: 50,
+// 		X: 10,
+// 		V: 5,
+// 		I: 1,
+// 	};
+// 	let number = [];
+// 	for (let i = 0; i < splitRo.length; i++) {
+// 		for (j in Object.keys(numerals)) {
+// 			if (splitRo[i] === Object.keys(numerals)[j]) {
+// 				number.push(numerals[splitRo[i]]);
+// 			}
+// 		}
+// 	}
+// 	for (let i = 0; i < number.length; i++) {
+// 		if (number[i] < number[i + 1]) {
+// 			sum -= number[i];
+// 		} else {
+// 			sum += number[i];
+// 		}
+// 	}
+// 	return sum;
 // }
