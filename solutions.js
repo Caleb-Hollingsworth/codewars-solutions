@@ -612,4 +612,22 @@ function orderWeight(strng) {
 // 	return sum;
 // }
 
-//
+// 3/17/21 kyu===6
+
+//Prompt: IQ Test
+
+//Solution:
+// function iqTest(numbers) {
+// 	let newNumbers = numbers.split(' ');
+// 	let even = [];
+// 	let odd = [];
+
+// 	for (let i = 0; i < newNumbers.length; i++) {
+// 		newNumbers[i] % 2 === 0
+// 			? even.push(newNumbers[i])
+// 			: odd.push(newNumbers[i]);
+// 	}
+// 	return even.length > odd.length
+// 		? newNumbers.indexOf(odd[0]) + 1
+// 		: newNumbers.indexOf(even[0]) + 1;
+// }
