@@ -631,3 +631,14 @@ function orderWeight(strng) {
 // 		? newNumbers.indexOf(odd[0]) + 1
 // 		: newNumbers.indexOf(even[0]) + 1;
 // }
+
+// 3/18/21
+
+//Prompt: Sums of Parts
+
+//Solution:
+// function partsSums(ls) {
+// 	ls.unshift(0);
+// 	let sum = ls.reduce((a, b) => a + b, 0);
+// 	return ls.map((num) => (sum = sum - num));
+// }
