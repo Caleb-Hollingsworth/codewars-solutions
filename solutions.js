@@ -642,3 +642,115 @@ function orderWeight(strng) {
 // 	let sum = ls.reduce((a, b) => a + b, 0);
 // 	return ls.map((num) => (sum = sum - num));
 // }
+// * Write a program which iterates the integers from 1 to 100. For multiples of three print "Fizz" instead of the number and print "Buzz" for the multiples of five. When number is divided by both three and five, print "fizz buzz"
+
+// * Write a program to find the index of a value in a sorted array. If the value does not find return the index where it would be if it were inserted in order.
+// Example:
+// [1, 2, 4, 5, 6] 5(target) -> 3(index)
+// [1, 2, 4, 5, 6] 0(target) -> 0(index)
+// [1, 2, 4, 5, 6] 7(target) -> 5(index)
+
+// * Write a program to find longest Palindromic Substring within a string.Also find the start index and the end index of that Palindromic Substring within the string. Print the palindromic substring, the start index, the end index and also the original string removing the palindromic substring.
+// i.e thequickbrownfoxxofnworbquickthe ->  brownfoxxofnworb
+// The start index : 8, end index :23
+// The string without palindromic substring :thequickquickthe
+
+// const iterating = () => {
+// 	for (let i = 0; i <= 100; i++) {
+// 		if (i % 3 === 0 && i % 5 === 0) {
+// 			console.log('fizz buzz');
+// 		} else if (i % 3 === 0) {
+// 			console.log('Fizz');
+// 		} else if (i % 5 === 0) {
+// 			console.log('Buzz');
+// 		} else {
+// 			console.log(i);
+// 		}
+// 	}
+// };
+
+// const findIndex = (array, target) => {
+// 	if (array.includes(target)) {
+// 		console.log(array.indexOf(target));
+// 	} else {
+// 		array.push(target);
+// 		array.sort((a, b) => a - b);
+// 		console.log(array.indexOf(target));
+// 	}
+// };
+// function reverse(s) {
+// 	var o = [];
+// 	for (var i = 0, len = s.length; i <= len; i++) o.push(s.charAt(len - i));
+// 	return o.join('');
+// }
+
+// function isPalindrome(word, words) {
+// 	return word === reverse(word) && !words.includes(word);
+// }
+
+// function countPalindromesInString(s) {
+// 	let subStrings = [];
+// 	for (let i = 0; i < s.length; i++) {
+// 		for (let j = 0; j < s.length - i; j++) {
+// 			let subString = s.substring(j, j + i + 1);
+// 			if (isPalindrome(subString, subStrings)) {
+// 				subStrings.push(subString);
+// 			}
+// 		}
+// 	}
+// 	return subStrings.length;
+// }
+
+// //reverse the end word
+// const reverse = (word) => {
+// 	let reversedWord = [];
+// 	for (let a = 0; a < word.length; a++) {
+// 		reversedWord.push(charAt(word.length - i));
+// 	}
+// 	return reversedWord.join('');
+// };
+
+// //compare the strings to find if it is a palindrome
+// const palindrome = (word) => {
+// 	return word === reverse(word);
+// };
+
+// const findPalindrome = (string) => {
+// 	//compare each end of string
+// 	//moving in one index at a time
+// 	//if you find a spot where the two characters equal,
+// 	//get the substring from the lower index to the higher index.
+// 	//run it through findPalindrome()
+// 	//if true, return string
+// 	let counter = 1;
+// 	for (let a = 0; a < string.length; a++) {
+// 		if (string[a] === string[string.length - counter]) {
+// 			let substring = string.substr(a, string.length - counter);
+// 			if (palindrome(substring)) {
+// 				return substring;
+// 			}
+// 		}
+// 	}
+// };
+
+// 3/23/21 kyu === 5
+
+//Prompt Human Readable Time
+
+//solution:
+// function humanReadable(seconds) {
+// 	let hours = Math.floor(seconds / 3600);
+// 	console.log((seconds %= 3600));
+// 	let minutes = seconds > 59 ? Math.floor(seconds / 60) : 0;
+// 	let newSeconds = seconds > 59 ? seconds % 60 : seconds;
+
+// 	const addZeros = (number) => {
+// 		return (number < 10 ? '0' : '') + number;
+// 	};
+
+// 	hours = addZeros(hours);
+// 	minutes = addZeros(minutes);
+// 	newSeconds = addZeros(newSeconds);
+
+// 	return `${hours}:${minutes}:${newSeconds}`;
+// }
