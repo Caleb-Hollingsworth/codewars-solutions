@@ -754,3 +754,14 @@ function orderWeight(strng) {
 
 // 	return `${hours}:${minutes}:${newSeconds}`;
 // }
+
+// 3/24/21 kyu===8
+
+//Prompt: Find the smallest integer in the array
+
+//Solution:
+// class SmallestIntegerFinder {
+// 	findSmallestInt(args) {
+// 		return args.sort((a, b) => a - b)[0];
+// 	}
+// }
