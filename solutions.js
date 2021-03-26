@@ -765,3 +765,26 @@ function orderWeight(strng) {
 // 		return args.sort((a, b) => a - b)[0];
 // 	}
 // }
+
+// 3/26/21 kyu===5
+
+//Prompt Rot13
+
+//Solution
+// function rot13(message) {
+// 	const splitMsg = message.split('');
+// 	const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+// 	const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+// 	let letterIndex = '';
+// 	let length = letters.length;
+// 	for (let i = 0; i < splitMsg.length; i++) {
+// 		if (splitMsg[i].match(/[a-z]/)) {
+// 			letterIndex = letters.indexOf(splitMsg[i]);
+// 			splitMsg[i] = letters[(letterIndex + 13) % length];
+// 		} else if (splitMsg[i].match(/[A-Z]/)) {
+// 			letterIndex = upperLetters.indexOf(splitMsg[i]);
+// 			splitMsg[i] = upperLetters[(letterIndex + 13) % length];
+// 		}
+// 	}
+// 	return splitMsg.join('');
+// }
