@@ -788,3 +788,12 @@ function orderWeight(strng) {
 // 	}
 // 	return splitMsg.join('');
 // }
+
+// 3/20/21 kyu===6
+
+//Prompt Twisted Sum
+
+//Solution (Python)
+
+// def complete_sum(n):
+// 	return sum(sum(map(int, str(num))) for num in range(1, n + 1))
