@@ -797,3 +797,30 @@ function orderWeight(strng) {
 
 // def complete_sum(n):
 // 	return sum(sum(map(int, str(num))) for num in range(1, n + 1))
+
+// 4/2/21 kyu===5
+
+//Prompt: The Hashtag Generator
+
+//Solution:
+// function generateHashtag(str) {
+// 	let stringArr = str.split(' ');
+// 	let newArr = [];
+// 	const returnAnswer = (arr) => {
+// 		for (let i = 0; i < arr.length; i++) {
+// 			if (arr[i].length >= 140) {
+// 				return false;
+// 			}
+// 			arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+// 		}
+// 		arr.splice(0, 0, '#');
+// 		return arr.join('');
+// 	};
+
+// 	for (let i = 0; i < stringArr.length; i++) {
+// 		if (stringArr[i].match(/[a-zA-Z]/)) {
+// 			newArr.push(stringArr[i]);
+// 		}
+// 	}
+// 	return newArr.length < 1 ? false : returnAnswer(newArr);
+// }
