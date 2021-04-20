@@ -860,3 +860,24 @@
 // 	}
 // 	return count;
 // }
+
+// 4/20/21
+
+//Prompt: There is a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. The player can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus 1 or 2. The player must avoid the thunderheads. Determine the minimum number of jumps it will take to jump from the starting postion to the last cloud. It is always possible to win the game.
+
+// For each game, you will get an array of clouds numbered 0 if they are safe or 1 if they must be avoided.
+
+//Solution:
+// function jumpingOnClouds(c) {
+// 	let steps = 0;
+// 	for (let i = 0; i < c.length; i++) {
+// 		if (c[i - 1] === c[i] && c[i + 1] === c[i]) {
+// 			c.splice(i, 1);
+// 		}
+// 		if (c[i] === 0 && i > 0) {
+// 			console.log(i);
+// 			steps++;
+// 		}
+// 	}
+// 	return steps;
+// }
