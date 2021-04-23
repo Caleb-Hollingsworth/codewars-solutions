@@ -881,3 +881,18 @@
 // 	}
 // 	return steps;
 // }
+
+// 4/23/21 kyu===7
+
+//prompt: All Star Code Challend #22
+
+//Solution:
+// function toTime(seconds) {
+// 	const getHours = Math.floor(seconds / 3600);
+
+// 	const getMinutes = Math.floor(seconds / 60);
+
+// 	const minutes = getMinutes % 60;
+
+// 	return `${getHours} hour(s) and ${minutes} minute(s)`;
+// }
